@@ -17,7 +17,7 @@ app.controller('DashCtrl', function($scope, $http,$ionicModal, $ionicPopup, $sta
     var diff = (now - start) + ((start.getTimezoneOffset() - now.getTimezoneOffset()) * 60 * 1000);
     var oneDay = 1000 * 60 * 60 * 24;
     var day = Math.floor(diff / oneDay);
-    console.log('Day of year: ' + day);
+    //console.log('Day of year: ' + day);
     //end====================
 
     $http.get('seekdaily2018.json').success(function(data){
